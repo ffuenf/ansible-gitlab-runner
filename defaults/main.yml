@@ -28,6 +28,13 @@ gitlab_runner_sentry_dsn: ''
 # Prometheus Metrics & Monitoring
 gitlab_runner_listen_address: ''
 
+gitlab_runner_repo_gpgcheck: '1'
+gitlab_runner_gpgcheck: '0'
+gitlab_runner_enabled: '1'
+gitlab_runner_gpgkey: 'https://packages.gitlab.com/gpg.key'
+gitlab_runner_sslverify: '1'
+gitlab_runner_sslcacert: '/etc/pki/tls/certs/ca-bundle.crt'
+
 # A list of runners to register and configure
 gitlab_runner_runners:
     # The identifier of the runner.
