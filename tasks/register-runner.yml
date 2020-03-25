@@ -45,7 +45,7 @@
     {% if gitlab_runner.docker_privileged|default(false) %}
     --docker-privileged
     {% endif %}
-    --docker-tlsverify '{{ gitlab_runner.docker_tlsverify|default("false") }}'
+    --docker-tlsverify={{ gitlab_runner.docker_tlsverify|default("false") }}
     {% if gitlab_runner.docker_dns|default(false) %}
     --docker-dns '{{ gitlab_runner.docker_dns|default("1.1.1.1") }}'
     {% endif %}
